@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Menu from './pages/Menu';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,9 +19,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
 
-      <footer className='bg-body-tertiary'>
-        <p className='p-3 m-0 text-center'>copyright @ Our Team</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
