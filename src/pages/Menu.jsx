@@ -5,6 +5,7 @@ import BreakfastImg from '../utils/img/breakfast.jpg';
 import LunchImg from '../utils/img/lunch.jpg';
 import DinnerImg from '../utils/img/dinner.jpg';
 import DessertImg from '../utils/img/dessert.jpg';
+import { Carousel } from 'react-bootstrap';
 
 const breakfast = [
     {
@@ -103,7 +104,30 @@ function Menu() {
                     <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success'>Breakfast</h2>
                     <div className='row flex-column-reverse flex-lg-row'>
                         <div className='col-lg-6 d-flex justify-content-center'>
-                            <img src={BreakfastImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" />
+                            {/* <img src={BreakfastImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" /> */}
+<Carousel interval={3000}>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={BreakfastImg}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={LunchImg}
+      alt="Second slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={BreakfastImg}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+</Carousel>
                         </div>
                         <div className='col-lg-6 d-flex flex-column justify-content-around'>
                             {breakfast.map((breakfast) => (
@@ -152,7 +176,30 @@ function Menu() {
                             ))}
                         </div>
                         <div className='col-lg-6 d-flex justify-content-center'>
-                            <img src={LunchImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" />
+                            {/* <img src={LunchImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" /> */}
+                            <Carousel interval={3000}>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={BreakfastImg}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={LunchImg}
+      alt="Second slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={DinnerImg}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+</Carousel>
                         </div>
                     </div>
                 </div>
@@ -163,7 +210,38 @@ function Menu() {
                     <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success'>Dinner</h2>
                     <div className='row flex-column-reverse flex-lg-row'>
                         <div className='col-lg-6 d-flex justify-content-center'>
-                            <img src={DinnerImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" />
+                            {/* <img src={DinnerImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" /> */}
+                            <Carousel interval={3000}>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={BreakfastImg}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={LunchImg}
+      alt="Second slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={BreakfastImg}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={DessertImg}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+</Carousel>
+
                         </div>
                         <div className='col-lg-6 d-flex flex-column justify-content-around'>
                             {dinner.map((dinner) => (
@@ -212,7 +290,37 @@ function Menu() {
                             ))}
                         </div>
                         <div className='col-lg-6 d-flex justify-content-center'>
-                            <img src={DessertImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" />
+                            {/* <img src={DessertImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" /> */}
+<Carousel interval={3000}>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={BreakfastImg}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={LunchImg}
+      alt="Second slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={BreakfastImg}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 mx-auto"
+      src={DessertImg}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+</Carousel>
                         </div>
                     </div>
                 </div>
